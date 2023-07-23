@@ -1,0 +1,170 @@
+h1{
+color:white;
+font-family: "Arial Narrow", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.399999618530273px;
+background-color:#3d6098;
+
+
+}
+
+
+
+
+h2 {
+color:white;
+color:white;
+font-family: "Arial Narrow", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.399999618530273px;
+background-color:#3d6098;
+
+} 
+
+
+.topnav {
+  background-color: #3d6098;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f04b4c;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+  background-color: red;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+fieldset {
+  background-color: #eeeeee;
+-moz-border-radius:8px;	
+border-radius:8px;
+border:3px solid #3d6098;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+ form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transition: border-color 0.3s ease-in-out;
+}
+
+fieldset:hover {
+  border-color: #4CAF50; /* Change the color to customize the moving effect */
+}
+
+.moving-effect::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #4CAF50; /* Change the color to match the border color on hover */
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.moving-effect::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #4CAF50; /* Change the color to match the border color on hover */
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+fieldset:hover::before {
+  top: -8px;
+  left: -8px;
+  border-bottom: 8px solid #4CAF50; /* Change the color to match the border color on hover */
+}
+
+fieldset:hover::after {
+  bottom: -8px;
+  right: -8px;
+  border-top: 8px solid #4CAF50; /* Change the color to match the border color on hover */
+}
